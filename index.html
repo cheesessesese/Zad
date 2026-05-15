@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="StyleSheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+<div class="flex" id="body-container">
+  <div class="rating-ui" id="submit-rating">
+
+  <img class="rating-ui-element" id="icon-star" src="icon-star.svg" alt="icon-star"><br>
+
+  <h1 class="rating-ui-element">How did we do?</h1>
+
+  <p class="rating-ui-element">
+    Please let us know how we did with your support<br>
+    request. All feedback is appreciated to help us<br>
+    improve our offering!</p>
+
+  <div class="rating-ui-element" id="rating-options">
+    <button class="rating-option" data-value="1">1</button>
+    <button class="rating-option" data-value="2">2</button>
+    <button class="rating-option" data-value="3">3</button>
+    <button class="rating-option" data-value="4">4</button>
+    <button class="rating-option" data-value="5">5</button>
+
+  </div>
+
+  <button class="rating-ui-element" id="submit-button">SUBMIT</button>
+</div>
+
+  <div class="rating-ui" id="thank-you-message">
+    <div class="flex"><img class="rating-ui-element" id="thank-you-messsage-img" src="illustration-thank-you.svg" alt="thank-you-messsage-img"></div>
+    <div class="flex"><h1 class="rating-ui-element" id="user-rating">You selected x out of 5</h1></div>
+
+    <h1 class="rating-ui-element">Thank you!</h1>
+
+    <p class="rating-ui-element">We appreciate you taking the time to give a rating.
+      If you ever need more support, don’t hesitate to get in touch!</p>
+
+  </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

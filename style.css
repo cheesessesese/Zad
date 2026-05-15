@@ -1,0 +1,136 @@
+:root {
+    --White: hsl(0, 100%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Grey: hsl(210, 19%, 18%);
+    --Dark-Grey: hsl(215, 20%, 15%);
+    --Black: hsl(216, 12%, 8%);
+
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--Black);
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#body-container {
+    height: 100vh;
+}
+
+.rating-ui {
+    background-color: var(--Dark-Grey);
+    padding: 40px;
+    border-radius: 7.5%;
+
+    width: 25rem;
+    height: 25.6rem;
+}
+
+#thank-you-message {
+    text-align: center;
+    display: none;
+}
+
+.rating-ui-element {
+    margin: 20px 0 20px;
+}
+
+.rating-ui h1 {
+    font-size: 2.1em;
+    font-weight: 500;
+    color: var(--White);
+
+    
+}
+
+.rating-ui p {
+    font-size: 1.16em;
+    font-weight: 300;
+    color: var(--Light-Grey);
+
+}
+
+
+#rating-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-option {
+    
+    background-color: var(--Grey);
+    border-radius: 50%;
+    
+    height: 63px;
+    width: 63px;
+    
+    font-size: 1.15em;
+    font-weight: 700;
+    color: var(--Light-Grey);
+    border: none;
+
+    transition: background-color 0.2s ease-in-out;
+}
+
+.rating-option:hover {
+    color: var(--Dark-Grey);
+    background-color: white;
+}
+
+.rating-option.active {
+    color: var(--Dark-Grey);
+    background-color: var(--Orange);
+}
+
+#icon-star {
+    height: 1.2em;
+    width: 1.2em;
+
+
+    background-color: var(--Grey);
+    border-radius: 50%;
+    overflow: visible;
+
+    padding: 20px;
+    margin-top: 0;
+}
+
+#submit-button {
+    padding: 15px 0 15px;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--Dark-Grey);
+    background-color: var(--Orange);
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    transition: background-color 0.1s ease-in-out;
+
+
+    margin-bottom: 0;
+}
+
+#submit-button:active {
+    background-color: var(--White);
+}
+
+
+#user-rating {
+    background-color: var(--Grey);
+    color: var(--Orange);
+    font-size: 1.10em;
+    font-weight: 200;
+    padding: 10px 20px 10px;
+
+    border-radius: 20px;
+}
